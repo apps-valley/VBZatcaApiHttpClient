@@ -9,7 +9,7 @@ Namespace ZatcaApiHttpClient
 
         Public Sub New()
             _client = New WebClient()
-            _client.BaseAddress = "https://localhost:7181/"
+            _client.BaseAddress = "https://zatcaapi.avtax.net/"
         End Sub
 
         Public Function Login(ByVal command As LoginCommand) As ApiResponse(Of LoginSuccessResponse)

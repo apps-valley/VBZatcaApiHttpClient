@@ -14,7 +14,7 @@ Namespace ZatcaApiHttpClient
 
         Public Sub New(ByVal accessToken As String)
             _client = New HttpClient With {
-        .BaseAddress = New Uri("https://localhost:7181/")
+        .BaseAddress = New Uri("https://zatcaapi.avtax.net/")
     }
             _client.DefaultRequestHeaders.Authorization = New AuthenticationHeaderValue("Bearer", accessToken)
             _client.DefaultRequestHeaders.Accept.Add(New MediaTypeWithQualityHeaderValue("application/json"))
